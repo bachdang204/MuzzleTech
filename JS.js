@@ -28,7 +28,9 @@ function dangNhap(){
     let mk = document.getElementById("matkhau").value;
     let root = JSON.parse(localStorage.getItem(tk));
     
-    if (tk === root.name && mk === root.pass){
+    if (root == null)
+        alert("Tài khoản không tồn tại");
+    else if (tk === root.name && mk === root.pass){
         alert("Đăng nhập thành công");
         window.location.href = "neon_heart.html";
     }
