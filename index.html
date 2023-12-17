@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuzzleTech</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <script src="JS.js"></script>
+    <div class="login_block", id="title_login">
+        <h2>Đăng nhập</h2>
+        <form>
+            <div class="form_login">
+                <label for="taikhoan">Tài khoản</label>
+                <input type="text", id="taikhoan", name="taikhoan" required>
+            </div>
+            <div class="form_login">
+                <label for="matkhau">Mật khẩu</label>
+                <input type="password", id="matkhau", name="matkhau" required>
+            </div>
+            <div class="form_login">
+                <button type="button" onclick="dangNhap()">Đăng nhập</button>
+                <button type="button" onclick="window.location.href = 'register.html'">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
